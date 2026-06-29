@@ -4,3 +4,5 @@ openpyxl
 sqlalchemy
 psycopg2-binary
 yfinance
+plotly
+supabase
