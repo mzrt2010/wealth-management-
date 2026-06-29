@@ -10,8 +10,8 @@ st.set_page_config(page_title="Multi-Currency Wealth Manager", layout="wide")
 
 @st.cache_resource
 def init_supabase() -> Client:
-    url = st.secrets.get("SUPABASE_URL", "YOUR_SUPABASE_URL")
-    key = st.secrets.get("SUPABASE_KEY", "YOUR_SUPABASE_KEY")
+    url = st.secrets.get("SUPABASE_URL", "https://jrkyajgheufgoadyxlcv.supabase.co")
+    key = st.secrets.get("SUPABASE_KEY", "sb_publishable_REP7ujaYG-RYWJyK2fKKrw__I9H3h6g")
     return create_client(url, key)
 
 supabase = init_supabase()
